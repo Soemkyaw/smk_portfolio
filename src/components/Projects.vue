@@ -4,7 +4,7 @@
         <h1 class="text-center fw-bolder pjtTitle">My Projects</h1>
 
         <div class="row mt-3 px-3">
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/laravel.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -19,12 +19,12 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-sm-6 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/php.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -39,12 +39,12 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-sm-6 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/bootstrap.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -59,12 +59,12 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-sm-6 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/bootstrap.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -79,12 +79,12 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-sm-6 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/bootstrap.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -99,12 +99,12 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-2 d-flex justify-content-center align-items-center ">
+          <div class="col-sm-12 col-sm-6 col-md-6 col-lg-4 p-2 justify-content-center align-items-center ">
             <div class=" pjtBorder">
               <img src="../assets/images/bootstrap.png" class="card-img-top" alt="..." style="height: 250px;">
               <div class="card-body p-2">
@@ -119,26 +119,44 @@
               </div>
               <div class="card-footer text-center my-3 ">
                 <hr>
-                <a href="" class=" mx-4  btn btnBorder">See More</a>
-                <a href="" class=" mx-4  btn btnBorder">Demo</a>
+                <button @click="isShow()" class=" mx-4  btn btn-outline-primary">See More</button>
+                <button  class=" mx-4  btn btn-outline-primary">Demo</button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="" v-if="show" >
+          <DropModal  @closeModal="closeModal"></DropModal>
         </div>
     </div>
   </section>
 </template>
 
 <script>
+import DropModal from './Drop-modal'
+import {ref} from 'vue';
 export default {
+  components: { DropModal },
+  setup(props) {
+    let show = ref(false)
 
-}
+    let isShow = function(){
+      show.value = true;
+      document.body.style.overflow = "hidden"
+    }
+
+    let closeModal = function(){
+      // console.log('Hello');
+      show.value = false;
+      document.body.style.overflow = "auto"
+    }
+
+    return {show,isShow,closeModal}
+  }
+};
 </script>
 
 <style>
-.pjtTitle{
-  /* text-shadow: 2px 2px 3px #8fa6db; */
-}
 .pjtBorder{
   border: 2px solid #103783;
   border-radius: 5px;
@@ -148,13 +166,12 @@ export default {
   box-shadow: 3px 3px 3px #9bafd9;
 }
 .tagColor{
-  background-color: #9bafd9;
+  background-color: #a8b5d0;
   color: black;
 }
 .btnBorder{
   width: fit-content !important;
   margin: 0px 10px !important;
-  /* background-color: #103683a5 !important; */
   color: #FBFBFB !important;
   background-color: #103683d7 !important;
   border: 1px solid #103683a5 !important;
@@ -164,4 +181,12 @@ export default {
   color: #FBFBFB !important;
   background-color: #103783 !important;
 }
+.btn-outline-primary{
+    border: 1px solid #103781 !important;
+    color: #103781 !important;
+  }
+  .btn-outline-primary:hover{
+    background-color: #103781!important;
+    color: white !important;;
+  }
 </style>

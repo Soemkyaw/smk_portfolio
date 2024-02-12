@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="skill">
     <div class="container py-5">
         <h1 class="text-center fw-bolder">Abilities I Possess</h1>
 
