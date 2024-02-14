@@ -1,5 +1,5 @@
 <template>
-  <section class="about py-5 bg-light" id="about" >
+  <section class="about py-5 bg-light" id="about" style="padding-top: 70px !important;">
     <div class="container">
       <div class="text-center">
         <span

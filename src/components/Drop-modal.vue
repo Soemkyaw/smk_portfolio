@@ -1,9 +1,19 @@
 <template>
-    <div class="drop" @click.self="closeModal">
-      <div class="modal-tag">
+  <div class="container" v-if="projectData">
+    <div class=" drop">
+      <div class="modal-tag rounded">
         <div class="modal-content">
-          <img src="../assets/images/bootstrap.png" alt="">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia esse aliquid nostrum, vel, eligendi culpa odit, enim amet quas iusto saepe repellendus quia doloribus unde numquam atque ad id necessitatibus. Doloremque tempore distinctio magnam alias debitis, nesciunt illo ipsam, fuga doloribus saepe quo non incidunt. Veniam, possimus nulla. Dolor dignissimos excepturi repellat magnam! Explicabo molestiae consectetur vero cupiditate corrupti repellat alias placeat soluta. Autem, a assumenda sit ratione cumque quo, nulla et iure non provident corporis libero consequatur consequuntur, accusamus sint illo sequi. Laborum dolorem ut sed, architecto excepturi tempora, sapiente ratione mollitia harum vero, iure reprehenderit molestias. Delectus?</p>
+          <div class=" p-2">
+            <div class=" d-flex align-items-center justify-content-between">
+              <h5>{{  projectData.title }}</h5>
+              <i class="fa-solid fa-xmark fs-3" @click="closeModal" style="cursor: pointer;"></i>
+            </div>
+            <hr>
+            <p>{{  projectData.description }}</p>
+            <hr>
+          </div>
+          <img :src="projectData.img" alt="">
+          <p class=" my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia esse aliquid nostrum, vel, eligendi culpa odit, enim amet quas iusto saepe repellendus quia doloribus unde numquam atque ad id necessitatibus. Doloremque tempore distinctio magnam alias debitis, nesciunt illo ipsam, fuga doloribus saepe quo non incidunt. Veniam, possimus nulla. Dolor dignissimos excepturi repellat magnam! Explicabo molestiae consectetur vero cupiditate corrupti repellat alias placeat soluta. Autem, a assumenda sit ratione cumque quo, nulla et iure non provident corporis libero consequatur consequuntur, accusamus sint illo sequi. Laborum dolorem ut sed, architecto excepturi tempora, sapiente ratione mollitia harum vero, iure reprehenderit molestias. Delectus?</p>
         </div>
         <hr>
         <div class=" d-flex justify-content-around align-items-center">
@@ -12,13 +22,16 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
   
   <script>
   // import {ref} from "vue"
   export default {
+    props: ['projectData'],
     setup(props,context) {
-    
+
+      console.log(props.projectData);
       let closeModal = function(){
         context.emit('closeModal')
       }
@@ -43,7 +56,7 @@
     top: 0;
     left: 0;
     /* background-color: rgba(0, 0, 0, 0.439); */
-    background-color: rgba(0, 0, 0, 0.497);
+    background-color: rgba(0, 0, 0, 0.211);
     width: 100%;
     height: 100%;
   }

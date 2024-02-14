@@ -2,9 +2,12 @@
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
           <!-- <transition name="fe" appear> -->
-        <router-link to="/" class="logo me-5">
+        <!-- <router-link to="/" class="logo me-5">
             <span>SoemKyaw<span>.</span></span>
-            </router-link>
+        </router-link> -->
+        <a href="#hero" class="logo me-5">
+          <span>SoemKyaw<span>.</span></span>
+        </a>
         <!-- </transition> -->
         <button
           class="navbar-toggler"
@@ -31,11 +34,11 @@
                 </li>
                 <li class="nav-item">
                   <!-- <router-link to="#project" class="nav-link">Projects</router-link> -->
-                  <a href="#about" class="nav-link">Projects</a>
+                  <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
                   <!-- <router-link to="#contact" class="nav-link">Contact</router-link> -->
-                  <a href="#about" class="nav-link">Contact</a>
+                  <a href="#contact" class="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -80,34 +83,14 @@ ul li a:hover {
   color: #103783;
 }
 nav {
-  position: sticky;
-  z-index: 9999;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   border-bottom: 1px solid #dbe4ee;
   padding: 10px;
+  height: 70px;
 }
 
-/* .fe-enter-from{
-  opacity: 0;
-  transform: scale(0.6);
-  transform: translateY(-20px),scale(0.6);
-}
-.fe-enter-to{
-  opacity: 1;
-  transform: translateY(0px),scale(1);
-}
-.fe-enter-active{
-  transition: all 1s ease;
-}
-.fe-leave-from{
-  opacity: 1;
-}
-.fe-leave-to{
-  opacity: 0;
-}
-.fe-leave-active{
-  transition: opacity 3s ease;
-} */
 </style>
