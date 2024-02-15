@@ -6,7 +6,7 @@
         <div class="row mt-3 px-3">
           <div class="col-sm-12 col-md-6 col-lg-4 p-2 justify-content-center align-items-center " v-for="pjt in projects" :key="pjt">
               <div class=" pjtBorder">
-                <img :src="pjt.img" class="card-img-top" alt="..." style="height: 250px;">
+                <img :src="pjt.img" class="card-img-top" alt="..." style="height: 200px;">
                 <hr class="">
                 <div class="card-body p-2">
                   <h5 class="card-title">{{ pjt.title }}</h5>
@@ -52,7 +52,7 @@ export default {
     let projects = [
       {
         title: 'Portfolio',
-        description: 'This is description testing',
+        description: 'This app is to view the information related to me.',
         img: require('../assets/images/portfolio.png'),
         tags: ['html','css','bootstrap','vue'],
         demo: "https://smk-portfolio-theta.vercel.app/"

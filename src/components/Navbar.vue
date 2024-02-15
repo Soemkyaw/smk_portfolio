@@ -1,10 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
-          <!-- <transition name="fe" appear> -->
-        <!-- <router-link to="/" class="logo me-5">
-            <span>SoemKyaw<span>.</span></span>
-        </router-link> -->
         <a href="#hero" class="logo me-5">
           <span>SoemKyaw<span>.</span></span>
         </a>
@@ -25,19 +21,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <!-- <router-link to="#about" class="nav-link">About</router-link> -->
                   <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                  <!-- <router-link to="#skill" class="nav-link">Skill</router-link> -->
                   <a href="#skill" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <!-- <router-link to="#project" class="nav-link">Projects</router-link> -->
                   <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <!-- <router-link to="#contact" class="nav-link">Contact</router-link> -->
                   <a href="#contact" class="nav-link">Contact</a>
                 </li>
               </ul>

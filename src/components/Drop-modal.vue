@@ -55,7 +55,6 @@
     z-index: 99999;
     top: 0;
     left: 0;
-    /* background-color: rgba(0, 0, 0, 0.439); */
     background-color: rgba(0, 0, 0, 0.211);
     width: 100%;
     height: 100%;
@@ -63,8 +62,7 @@
   .modal-tag {
     max-width: 600px;
     scroll-margin-bottom: 0;
-    /* padding: 20px; */
-    margin: 200px auto;
+    margin: 100px auto;
     background-color: #fff;
   }
   .modal-tag img {
@@ -74,7 +72,6 @@
     height: 500px;
     padding: 10px;
     overflow-y: scroll;
-    /* scrollbar-width: thin; */
   }
 /* Customize the right scrollbar */
   .modal-content::-webkit-scrollbar {

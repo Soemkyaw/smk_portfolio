@@ -12,8 +12,11 @@
           <h1 class="hero-title fw-bold py-2">Soe Moe Kyaw</h1>
           <h4 class="">Junior Web Developer</h4>
           <button class="dBtn btn my-4">
-            Download CV
+            <a href="../assets/files/Soe Moe Kyaw -  Resume.pdf" download class=" text-decoration-none text-primary">Download CV</a>
           </button>
+          <!-- <button class=""> -->
+            <!-- <a href="../assets/files/Soe Moe Kyaw -  Resume.pdf" download class="btn btn-outline-primary py-2 my-4">Download CV</a> -->
+          <!-- </button> -->
           <div class="social-media-group d-flex justify-content-between" >
             <a href="https://www.facebook.com/profile.php?id=100025515164823" target="_blank" class="social-media-app">
               <i class="fa-brands fa-square-facebook fs-3 text-primary"></i>
@@ -35,17 +38,20 @@
 </template>
 
 <script>
+import { ref } from "vue"
 export default {
   props: {},
-  data() {
-    return {
-    }
-  },
+  setup(props) {
+    let cv = ref('')
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.text-primary{
+  color: #103783 !important;
+}
 .pfImage {
   height: 380px;
   width: 350px;

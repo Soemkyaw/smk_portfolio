@@ -34,7 +34,6 @@ export default {
         width: 100%;
         outline: none;
         border: none;
-        /* background-color: #5d8febbb; */
         padding: 10px;
         border-radius: 5px;
         margin: 10px 0;

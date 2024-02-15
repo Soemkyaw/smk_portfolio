@@ -9,8 +9,8 @@
             <div class="rounded ">
                 <div class="feSkills mx-auto rounded"></div>
             </div>
-            <div class="row mt-3">
-                <div v-for="skill in frontend_skills" :key="skill.id" class="m-2 col d-flex justify-content-center align-items-center">
+            <div class="row mt-3 justify-content-center">
+                <div v-for="skill in frontend_skills" :key="skill.id" class="my-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 col  d-flex justify-content-center align-items-center">
                     <div class="px-3 py-2 bg-dark skill-logo rounded">
                         <div class=" p-3 bg-light skillCard rounded rounded-circle">
                             <img v-bind:src="skill.imgSrc" style="height: 100px;width: 100px;">
@@ -69,7 +69,6 @@ export default {
 
 <style>
 .skillCard{
-    /* display: inline; */
     width: fit-content;
 }
 .feSkills{
@@ -79,12 +78,10 @@ export default {
 }
 .skill-logo{
     box-shadow: -10px 10px 2px #103783;
-    /* box-shadow: -10px 10px 2px #103783; */
     transition: all 0.5s ease;
 }
 .skill-logo:hover{
     transform: translateY(10px) translateX(-10px);
     box-shadow: -2px 2px 1px #103783;
-    /* box-shadow: none; */
 }
 </style>

@@ -5,10 +5,12 @@
     <Skills></Skills>
     <Projects></Projects>
     <Contact></Contact>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
@@ -19,6 +21,7 @@ import About from '../components/About.vue'
 export default {
   name: 'HomeView',
   components: {
+    Footer,
     Contact,
     Navbar,
     Projects,
