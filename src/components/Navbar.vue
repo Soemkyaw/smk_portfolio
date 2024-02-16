@@ -40,10 +40,16 @@
 </template>
 
 <script>
-export default {};
+import {ref} from "vue"
+export default {
+  setup(props) {
+
+  }
+};
 </script>
 
 <style scoped>
+
 .logo {
   text-decoration: none;
   font-size: 34px;

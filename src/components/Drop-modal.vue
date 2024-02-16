@@ -9,6 +9,9 @@
               <i class="fa-solid fa-xmark fs-3" @click="closeModal" style="cursor: pointer;"></i>
             </div>
             <hr>
+            <div class="my-3">
+                <span class="tagColor me-2 px-3 py-1 rounded" v-for="tag in projectData.tags" :key="tag">{{ tag }}</span>
+            </div>
             <p>{{  projectData.description }}</p>
             <hr>
           </div>
@@ -62,9 +65,10 @@
   .modal-tag {
     max-width: 600px;
     scroll-margin-bottom: 0;
-    margin: 100px auto;
+    margin: 150px auto;
     background-color: #fff;
   }
+  
   .modal-tag img {
     width: -webkit-fill-available;
   }
@@ -88,5 +92,10 @@
   .modal-content::-webkit-scrollbar-track {
     background-color:  rgba(88, 80, 80, 0.439);
     
+  }
+  @media (max-width: 500px) {
+    .modal-tag {
+      margin: 100px auto;
+    }
   }
   </style>

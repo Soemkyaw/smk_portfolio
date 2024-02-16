@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-white py-5" id="hero" style="padding-top: 70px !important;">
+  <div class="container  py-5" id="hero" style="padding-top: 70px !important;">
     <div class="row mt-3">
       <div class="col-md-6 text-center">
         <transition name="hero-img" appear>
@@ -42,7 +42,7 @@ import { ref } from "vue"
 export default {
   props: {},
   setup(props) {
-    let cv = ref('')
+    
   }
 };
 </script>
