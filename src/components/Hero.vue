@@ -3,7 +3,7 @@
     <div class="row mt-3">
       <div class="col-md-6 text-center">
         <transition name="hero-img" appear>
-          <img src="../assets/pf.jpg" class="pfImage rounded-circle shadow" />
+          <img src="../assets/profile.jpg" class="pfImage rounded-circle shadow" />
         </transition>
       </div>
       <transition name="hero-para" appear>

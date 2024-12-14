@@ -17,11 +17,11 @@
           <div class="row align-items-center">
             <div class="col-md-6">
               <h5 class="ms-3">
-                Hi! there, my name is Soe Mow Kyaw. I am 24 year old.
+                Hi! there, my name is Soe Mow Kyaw.
               </h5>
               <p>
                 Enthusiastic and self-driven Junior Web Developer with a strong
-                foundation in PHP, Laravel, JavaScript, and frontend frameworks
+                foundation in PHP, Laravel, JavaScript, and front-end frameworks
                 like Bootstrap and Tailwind CSS. Proven ability to build
                 dynamic, responsive web applications through personal study
                 projects. Eager to apply my skills in a professional environment

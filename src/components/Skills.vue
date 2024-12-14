@@ -15,7 +15,6 @@
                         <div class=" p-3 bg-light skillCard rounded rounded-circle">
                             <img v-bind:src="skill.imgSrc" style="height: 100px;width: 100px;">
                         </div>
-                        <p class="text-center text-light pt-2">{{ skill.name.toUpperCase() }}</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +34,6 @@
                             <div class=" p-3 bg-light skillCard rounded rounded-circle">
                                 <img v-bind:src="skill.imgSrc" style="height: 100px;width: 100px;">
                             </div>
-                            <p class="text-center text-light pt-2">{{ skill.name.toUpperCase() }}</p>
                         </div>
                       </div>
                     </div>

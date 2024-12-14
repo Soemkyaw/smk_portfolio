@@ -5,7 +5,7 @@
 
       <div class="row mt-3 px-3">
         <div
-          class="col-sm-12 col-md-6 col-lg-4 p-2 justify-content-center align-items-center"
+          class="col-sm-12 col-md-6 col-lg-6 p-2 justify-content-center align-items-center"
           v-for="pjt in projects"
           :key="pjt"
         >
@@ -75,7 +75,7 @@ export default {
         title: "Portfolio",
         description:
           "Created a personal portfolio to showcase projects, skills, and contact information. Designed with a clean, responsive layout to highlight key work and achievements. Built using Html, Bootstrap, and Vue js.",
-        img: require("../assets/images/portfolio.png"),
+        img: require("../assets/images/ptpf.png"),
         tags: ["html", "css", "bootstrap", "vue"],
         detail: ``,
         github: "https://github.com/Soemkyaw/smk_portfolio",
@@ -101,29 +101,29 @@ Built with PHP, Laravel, Tailwind CSS for a responsive design, and jQuery for in
           "Built a blog system that allows users to create, edit, and delete posts. Logged-in users can comment on posts, while admins can manage and approve content. Developed using PHP, Laravel, Bootstrap, and jQuery for dynamic interaction.",
         img: require("../assets/images/blog img1.png"),
         tags: ["html", "css", "bootstrap", "jquery", "php", "laravel"],
-        detail:  `
+        detail: `
 User Registration and Login: Any user can create an account and log in.
 Blog Posting: Only logged-in users can create blog posts.
 Comment System: Logged-in users can add comments to posts.
 Admin Controls: Admins can manage blog posts by approving or canceling them.
 Built with PHP and Laravel for backend functionality, Bootstrap for responsive design, and jQuery for interactivity.
-`
+`,
       },
       {
         title: "pixel-postions",
         description:
           "Developed a web-based system for job listings, where employers can post jobs, and job seekers can apply. Includes admin features for managing users and job posts. Built using PHP, Laravel, and tailwind",
-        img: require("../assets/images/php.png"),
+        img: require("../assets/images/job-platform.png"),
         tags: ["html", "css", "tailwind", "php", "laravel"],
         detail: `Created a web-based job hiring platform where employers can post job openings, specifying job details, requirements, and salary rates. Job seekers can browse job listings, view detailed job descriptions, and choose potential employers. The system allows users to view multiple job posts from the same employer and compare job listings based on different salary rates. Features include an easy-to-use interface for both employers and job seekers, dynamic job posting management, and intuitive filtering options for salary and job type. Built with PHP, Laravel, Bootstrap, and jQuery.`,
       },
-      {
-        title: "Live Chat System",
-        description:
-          "Built a real-time live chat application using Vue.js for the front-end and Firebase for real-time messaging.",
-        img: require("../assets/images/js.png"),
-        tags: ["html", "css", "bootstrap", "vue", "firebase"],
-      },
+      // {
+      //   title: "Live Chat System",
+      //   description:
+      //     "Built a real-time live chat application using Vue.js for the front-end and Firebase for real-time messaging.",
+      //   img: require("../assets/images/js.png"),
+      //   tags: ["html", "css", "bootstrap", "vue", "firebase"],
+      // },
     ];
 
     return { show, isShow, closeModal, projects, clickedProjectData };
